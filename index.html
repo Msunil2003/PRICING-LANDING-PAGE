@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pricing Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="pricing" class="pricing-table">
+        <div class="pricing-options">
+            <button id="basic-toggle" class="active" onclick="togglePricing('basic')">Basic</button>
+            <button id="standard-toggle" onclick="togglePricing('standard')">Standard</button>
+            <button id="premium-toggle" onclick="togglePricing('premium')">Premium</button>
+        </div>
+        <div id="basic" class="pricing-plan active">
+            <h2>Basic</h2>
+            <p class="price">$10/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button>Select</button>
+        </div>
+        <div id="standard" class="pricing-plan">
+            <h2>Standard</h2>
+            <p class="price">$20/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+            </ul>
+            <button>Select</button>
+        </div>
+        <div id="premium" class="pricing-plan">
+            <h2>Premium</h2>
+            <p class="price">$30/month</p>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <button>Select</button>
+        </div>
+    </section>
+
+    <section id="settings" class="settings">
+        <h2>Settings</h2>
+        <form id="settings-form">
+            <label for="currency">Currency:</label>
+            <select id="currency" name="currency">
+                <option value="$">USD</option>
+                <option value="€">EUR</option>
+                <option value="£">GBP</option>
+            </select>
+
+            <label for="unit">Measurement Unit:</label>
+            <select id="unit" name="unit">
+                <option value="cm">Centimeter (cm)</option>
+                <option value="in">Inch (in)</option>
+                <option value="m">Meter (m)</option>
+            </select>
+
+            <button type="submit">Save</button>
+        </form>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"This service is amazing! It has changed my life."</p>
+            <cite>- Happy Customer</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent value for money. Highly recommend."</p>
+            <cite>- Satisfied Client</cite>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is included in the Basic plan?</h3>
+            <p>The Basic plan includes feature 1, feature 2, and feature 3.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I upgrade my plan later?</h3>
+            <p>Yes, you can upgrade your plan at any time.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

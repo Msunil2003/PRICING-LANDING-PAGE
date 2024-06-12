@@ -1,0 +1,324 @@
+/* styles.css */
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8A2BE2; /* Violet background color */
+    color: #FFFFFF; /* White text color */
+}
+
+header {
+    background-color: rgba(138, 43, 226, 0.9); /* Slightly transparent violet */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #E5E5E5;
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(138, 43, 226, 0.9); /* Slightly transparent violet */
+}
+
+.pricing-options {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing-options button {
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pricing-options button.active {
+    background-color: #5A1EA3;
+}
+
+.pricing-plan {
+    background: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+    color: #333; /* Dark text color for contrast */
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+}
+
+.pricing-plan h2 {
+    margin-top: 0;
+    color: #8A2BE2; /* Violet text color */
+}
+
+.pricing-plan .price {
+    font-size: 24px;
+    color: #8A2BE2; /* Violet text color */
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    color: #333; /* Dark text color for contrast */
+}
+
+.pricing-plan ul li {
+    margin: 10px 0;
+}
+
+.pricing-plan button {
+    background-color: #8A2BE2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pricing-plan button:hover {
+    background-color: #5A1EA3;
+}
+
+.settings {
+    padding: 20px;
+    background-color: rgba(138, 43, 226, 0.9); /* Slightly transparent violet */
+    text-align: center;
+}
+
+.settings h2 {
+    margin-bottom: 20px;
+}
+
+.settings form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings label {
+    margin-top: 10px;
+}
+
+.settings select {
+    width: 80%;
+    max-width: 200px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333; /* Dark text color for contrast */
+}
+
+.settings button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8A2BE2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.settings button:hover {
+    background-color: #5A1EA3;
+}
+
+.testimonials, .faq, .contact {
+    padding: 20px;
+    background-color: rgba(138, 43, 226, 0.9); /* Slightly transparent violet */
+    text-align: center;
+    color: #FFFFFF; /* White text color */
+}
+
+.testimonial {
+    background: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    color: #333; /* Dark text color for contrast */
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.faq-item {
+    margin: 20px 0;
+}
+
+.faq-item h3 {
+    margin: 0;
+    color: #FFFFFF; /* White text color */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label {
+    margin-top: 10px;
+}
+
+.contact form input, .contact form textarea {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333; /* Dark text color for contrast */
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8A2BE2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.contact form button:hover {
+    background-color: #5A1EA3;
+}
+
+footer {
+    background-color: rgba(138, 43, 226, 0.9); /* Slightly transparent violet */
+    padding: 10px;
+    text-align: center;
+}
+
+footer nav {
+    margin-top: 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    color: #FFFFFF;
+}
+
+
+
+header {
+    background-color: rgba(27, 2, 51, 0.9); /* Deep violet */
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(27, 2, 51, 0.9); /* Deep violet */
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer nav ul li a:hover {
+    color: #E5E5E5; /* Lighter grey */
+}
+.pricing-plan {
+    background: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto; /* Center horizontally */
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+    color: #333; /* Dark text color for contrast */
+}
+/* styles.css */
+
+.settings {
+    padding: 20px;
+    background-color: rgba(27, 2, 51, 0.9); /* Slightly transparent violet */
+    text-align: center;
+    margin: 20px auto; /* Center horizontally */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* styles.css */
+
+.contact {
+    padding: 20px;
+    background-color: rgba(27, 2, 51, 0.9); /* Slightly transparent violet */
+    text-align: center;
+    margin: 20px auto; /* Center horizontally */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+
